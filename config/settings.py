@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     
     # My Apps
-    
+    'accounts.apps.AccountsConfig',
     
     # Third Party Apps
     'rest_framework',
@@ -130,3 +130,7 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+# Custom User
+AUTH_USER_MODEL = 'accounts.CustomUser'
