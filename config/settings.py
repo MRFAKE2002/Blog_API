@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     
     # My Apps
     'accounts.apps.AccountsConfig',
+    'blog.apps.BlogConfig',
     
     # Third Party Apps
     'rest_framework',
