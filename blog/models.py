@@ -3,7 +3,7 @@ from django.contrib.auth import get_user_model
 from django.utils.translation import gettext_lazy as _
 from django.utils import timezone
 
-class post(models.Model):
+class Post(models.Model):
     title = models.CharField(_('Title'), max_length=200)
     
     slug = models.SlugField(_('Slug'))
