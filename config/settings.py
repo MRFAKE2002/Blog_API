@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     # My Apps
     'accounts.apps.AccountsConfig',
     'blog.apps.BlogConfig',
+    'api.apps.ApiConfig',
     
     # Third Party Apps
     'rest_framework',
@@ -64,7 +65,7 @@ ROOT_URLCONF = 'config.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR.joinpath('templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -114,11 +115,13 @@ AUTH_PASSWORD_VALIDATORS = [
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
 
 LANGUAGE_CODE = 'en-us'
+# LANGUAGE_CODE = 'asian-fa'
 
 TIME_ZONE = 'UTC'
+# TIME_ZONE = 'fa'
 
 USE_I18N = True
-
+USE_L10N = True
 USE_TZ = True
 
 
