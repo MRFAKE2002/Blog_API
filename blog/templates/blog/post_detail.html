@@ -1,0 +1,18 @@
+{% extends "_base.html" %}
+
+{% comment %} {% load i18n %} {% endcomment %}
+
+{% block title %}
+
+    {% comment %} {% trans post list %} {% endcomment %}
+    post detail
+
+{% endblock %}
+
+{% block body %}
+
+        {{ post.title }}
+        {{ post.text }}
+        {{ post.author }}
+
+{% endblock %}
